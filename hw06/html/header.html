@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BB-198</title>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script>
+    function load() {
+      $('#post').click(function(e) {
+        'use strict';
+
+        var data = {
+          user: $('#user').val(),
+          text: $('#text').val()
+        };
+
+        $.post(window.location, JSON.stringify(data), function() {
+          window.location.reload();
+        });
+      });
+    }
+  </script>
+</head>
+
+<body onload="load();">
+  <h1>Welcome to the CIS 198 Web 3.0 SoLoMobile-Scale Telnet BBS.js!</h1>
+
+  <div style="width:100%;height:300px;overflow-y:scroll;border:3px double black;">

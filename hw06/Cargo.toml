@@ -1,0 +1,9 @@
+[package]
+name = "bbs"
+version = "0.1.0"
+authors = ["CIS 198 <cis198@seas.upenn.edu>"]
+
+[dependencies]
+hyper = "0.7.2"
+rustc-serialize = "0.3"
+

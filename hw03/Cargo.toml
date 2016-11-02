@@ -1,0 +1,10 @@
+[package]
+name = "hw03"
+version = "0.1.0"
+authors = ["CIS 198 <cis198@cis.upenn.edu>"]
+
+[dependencies]
+clippy = { version = "*", optional = true }
+
+[features]
+default = []
